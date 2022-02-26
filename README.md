@@ -180,7 +180,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ## License
 This plugin is released under the MIT license.
 
-[npm-icon]: https://nodei.co/npm/cypress-plugin-visual-tests.svg?downloads=true
-[npm-url]: https://npmjs.org/package/cypress-plugin-visual-tests
-[ci-image]: https://github.com/kiru42/cypress-plugin-visual-tests/workflows/test/badge.svg?branch=master
-[ci-url]: https://github.com/kiru42/cypress-plugin-visual-tests/actions
+[npm-icon]: https://nodei.co/npm/@kiru42/cypress-plugin-visual-tests.svg?downloads=true
+[npm-url]: https://www.npmjs.com/package/@kiru42/cypress-plugin-visual-tests
+[ci-image]: https://github.com/kiru42/cypress-plugin-snapshots/workflows/CI/badge.svg?branch=main
+[ci-url]: https://github.com/kiru42/cypress-plugin-snapshots/actions
