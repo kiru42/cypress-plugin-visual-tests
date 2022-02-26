@@ -18,6 +18,11 @@ jobs:
         node-version: [14.x, 15.x, 16.x, 17.x]
 
     steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
     - name: Single step
       run: |
         echo Hello World
@@ -25,11 +30,6 @@ jobs:
         echo $GITHUB_REF
         echo $GITHUB_EVENT_HEAD_COMMIT_MESSAGE
         echo $GITHUB_COMMIT_MESSAGE
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
     - name: Cache Node.js modules
       uses: actions/cache@v2
       with:
