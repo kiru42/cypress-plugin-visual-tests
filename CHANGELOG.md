@@ -1,3 +1,10 @@
+## [1.5.14](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.13...v1.5.14) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fs-extra to v10 ([a5f25bd](https://github.com/kiru42/cypress-plugin-snapshots/commit/a5f25bde23c6fad20708917549ca5c163090b2d8))
+
 ## [1.5.13](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.12...v1.5.13) (2022-02-26)
 
 
