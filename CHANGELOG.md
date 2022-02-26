@@ -1,3 +1,10 @@
+## [1.5.8](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.7...v1.5.8) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update socket.io packages to v4 ([c3e38e6](https://github.com/kiru42/cypress-plugin-snapshots/commit/c3e38e6fd77212574ab2965485ad60fdcc96f9b6))
+
 ## [1.5.7](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.6...v1.5.7) (2022-02-26)
 
 
