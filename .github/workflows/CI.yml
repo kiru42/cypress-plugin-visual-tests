@@ -38,7 +38,7 @@ jobs:
         npm run ci:test
         kill $(jobs -p) || true
     - name: Archive Cypress snapshots
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       if: failure()
       with:
         name: cypress-snapshots
