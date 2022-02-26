@@ -13,11 +13,10 @@ function applyReplace(expected, replace) {
   }
 
   if (typeof replace === 'object') {
-    const jsonString = Object.keys(replace)
-      .reduce((result, key) => result.replace(
-        new RegExp(`\\$\\{${key}\\}`, 'g'),
-        replace[key]
-      ), JSON.stringify(expected));
+    const jsonString = Object.keys(replace).reduce(
+      (result, key) => result.replace(new RegExp(`\\$\\{${key}\\}`, 'g'), replace[key]),
+      JSON.stringify(expected)
+    );
     return JSON.parse(jsonString);
   }
 

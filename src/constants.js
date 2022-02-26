@@ -5,4 +5,4 @@ module.exports = {
   IMAGE_TYPE_ACTUAL: 'actual',
   NO_LOG: { log: false },
   URL_PREFIX: '#cypress-plugin-snapshot-',
-}
+};

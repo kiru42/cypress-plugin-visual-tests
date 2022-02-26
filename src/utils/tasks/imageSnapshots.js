@@ -9,7 +9,7 @@ const getImageData = require('../image/getImageData');
 const { IMAGE_TYPE_ACTUAL } = require('../../constants');
 const { DEFAULT_IMAGE_CONFIG } = require('../../config');
 
-function moveActualImageToSnapshotsDirectory({image, snapshotTitle, testFile} = {}) {
+function moveActualImageToSnapshotsDirectory({ image, snapshotTitle, testFile } = {}) {
   if (image && image.path) {
     const filename = getSnapshotFilename(testFile, snapshotTitle, IMAGE_TYPE_ACTUAL);
     rimraf(filename);
@@ -40,8 +40,12 @@ function getImageObject(filename, addHash = true) {
 
   if (size > 0) {
     const image = PNG.sync.read(fs.readFileSync(filename));
-    const hash = addHash !== false ?
-      createHash('sha1').update(image.data).digest('base64') : undefined;
+    const hash =
+      addHash !== false
+        ? createHash('sha1')
+            .update(image.data)
+            .digest('base64')
+        : undefined;
 
     return {
       path: filename,
@@ -65,7 +69,7 @@ function createCompareCanvas(width, height, source) {
       green: 0,
       blue: 0,
       alpha: 0,
-    }
+    },
   });
   PNG.bitblt(source, canvas, 0, 0, source.width, source.height, 0, 0);
   return canvas;
@@ -85,8 +89,7 @@ function makeImagesEqualSize(expected, actual) {
 }
 
 function compareImageSizes(expected, actual) {
-  return expected.width === actual.width &&
-    actual.height === expected.height;
+  return expected.width === actual.width && actual.height === expected.height;
 }
 
 function compareImages(expected, actual, diffFilename, config) {
@@ -112,10 +115,12 @@ function compareImages(expected, actual, diffFilename, config) {
     const imageWidth = actual.image.width;
     const imageHeight = actual.image.height;
 
-    const diffImage = config.createDiffImage ? new PNG({
-      height: imageHeight,
-      width: imageWidth,
-    }) : null;
+    const diffImage = config.createDiffImage
+      ? new PNG({
+          height: imageHeight,
+          width: imageWidth,
+        })
+      : null;
 
     const totalPixels = imageWidth * imageHeight;
     const diffPixelCount = pixelmatch(
@@ -133,15 +138,17 @@ function compareImages(expected, actual, diffFilename, config) {
       const diffRatio = diffPixelCount / totalPixels;
       passed = diffRatio <= imageConfig.threshold;
     } else {
-      throw new Error(`Unknown imageConfig.thresholdType: ${imageConfig.thresholdType}. `+
-        `Valid options are "pixel" or "percent".`);
+      throw new Error(
+        `Unknown imageConfig.thresholdType: ${imageConfig.thresholdType}. ` +
+          `Valid options are "pixel" or "percent".`
+      );
     }
 
     if (!passed && diffImage) {
       // Set filter type to Paeth to avoid expensive auto scanline filter detection
       // For more information see https://www.w3.org/TR/PNG-Filters.html
       const pngBuffer = PNG.sync.write(diffImage, {
-        filterType: 4
+        filterType: 4,
       });
       fs.writeFileSync(diffFilename, pngBuffer);
     }
@@ -161,5 +168,5 @@ module.exports = {
   createDiffObject,
   getImageObject,
   saveImageSnapshot,
-  moveActualImageToSnapshotsDirectory
+  moveActualImageToSnapshotsDirectory,
 };

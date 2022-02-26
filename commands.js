@@ -1,9 +1,6 @@
 /* globals Cypress, before, after, cy */
 /* eslint-env browser */
-const {
-  merge,
-  cloneDeep
-} = require('lodash');
+const { merge, cloneDeep } = require('lodash');
 const { initUi } = require('./src/ui');
 const commands = require('./src/commands/index');
 const cleanUpSnapshots = require('./src/utils/commands/cleanupSnapshots');
@@ -11,17 +8,20 @@ const getConfig = require('./src/utils/commands/getConfig');
 const { NO_LOG } = require('./src/constants');
 
 function addCommand(commandName, method) {
-  Cypress.Commands.add(commandName, {
-    prevSubject: true
-  }, (commandSubject, taskOptions) => {
-    if (!commandSubject) {
-      return commandSubject;
-    }
+  Cypress.Commands.add(
+    commandName,
+    {
+      prevSubject: true,
+    },
+    (commandSubject, taskOptions) => {
+      if (!commandSubject) {
+        return commandSubject;
+      }
 
-    const options = merge({}, cloneDeep(getConfig()), taskOptions);
-    return cy.wrap(commandSubject, NO_LOG)
-      .then((subject) => method(subject, options));
-  });
+      const options = merge({}, cloneDeep(getConfig()), taskOptions);
+      return cy.wrap(commandSubject, NO_LOG).then(subject => method(subject, options));
+    }
+  );
 }
 
 function initCommands() {
@@ -38,7 +38,7 @@ function initCommands() {
       if (window.top.closeSnapshotModal) {
         window.top.closeSnapshotModal();
       }
-    } catch(ex) {
+    } catch (ex) {
       window.console.error(ex);
     }
   }
@@ -49,8 +49,8 @@ function initCommands() {
 
   // Close snapshot modal and reset image files cache before all test restart
   Cypress.on('window:before:unload', () => {
-    closeSnapshotModal()
-    clearFileCache()
+    closeSnapshotModal();
+    clearFileCache();
   });
 
   // Clean up unused snapshots

@@ -9,9 +9,7 @@ function resizeImage(filename, targetFile, devicePixelRatio) {
     const width = Math.floor(dimensions.width / devicePixelRatio);
 
     return Jimp.read(filename)
-      .then(image => image
-        .resize(width, height)
-        .writeAsync(targetFile))
+      .then(image => image.resize(width, height).writeAsync(targetFile))
       .then(() => fs.remove(filename))
       .then(() => true)
       .catch(err => {

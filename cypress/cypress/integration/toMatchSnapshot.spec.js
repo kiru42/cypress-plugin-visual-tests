@@ -6,16 +6,14 @@ describe('toMatchSnapshot', () => {
   });
 
   it('toMatchSnapshot - html', () => {
-    cy.visit('/static/stub.html')
-      .then(() => {
-        cy.get('[data-test=test]').toMatchSnapshot();
-      });
+    cy.visit('/static/stub.html').then(() => {
+      cy.get('[data-test=test]').toMatchSnapshot();
+    });
   });
 
   it('toMatchSnapshot - html escaping', () => {
-    cy.visit('/static/input.html')
-      .then(() => {
-        cy.get('#input-element').toMatchSnapshot();
-      });
+    cy.visit('/static/input.html').then(() => {
+      cy.get('#input-element').toMatchSnapshot();
+    });
   });
 });

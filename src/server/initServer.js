@@ -8,17 +8,17 @@ function initServer(config) {
   const server = http.createServer();
   const io = socketio(server);
 
-  io.on('connection', (client) => {
+  io.on('connection', client => {
     const { token } = client.handshake.query;
 
     if (config.serverEnabled) {
-      client.on(SAVE_IMAGE, (data) => {
+      client.on(SAVE_IMAGE, data => {
         if (token === config.token) {
           saveImageSnapshot(data);
         }
       });
 
-      client.on(SAVE_TEXT, (data) => {
+      client.on(SAVE_TEXT, data => {
         if (token === config.token) {
           saveTextSnapshot(data);
         }
