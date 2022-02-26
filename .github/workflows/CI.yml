@@ -65,10 +65,8 @@ jobs:
   release:
     name: Release
     needs: quality
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'chore(release):')
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    env:
-      CACHE_IMAGE: kiru42/cypress-plugin-snapshots
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
