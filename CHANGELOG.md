@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.0...v1.5.1) (2022-02-26)
+
+
+### Bug Fixes
+
+* github workflow and npm repository ([1cc7cda](https://github.com/kiru42/cypress-plugin-snapshots/commit/1cc7cda4398848069ca6859bd29397f44d9d76ea))
+
 # [1.5.0](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.4.4...v1.5.0) (2022-02-26)
 
 
