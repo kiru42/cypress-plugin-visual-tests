@@ -1,3 +1,10 @@
+## [1.5.12](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.11...v1.5.12) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency image-size to v1 ([7f55359](https://github.com/kiru42/cypress-plugin-snapshots/commit/7f5535910b14414f0d61b503dcc8ace886058304))
+
 ## [1.5.11](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.10...v1.5.11) (2022-02-26)
 
 
