@@ -1,3 +1,11 @@
+## [1.5.3](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.2...v1.5.3) (2022-02-26)
+
+
+### Bug Fixes
+
+* delete ci.yml ([abdf8dc](https://github.com/kiru42/cypress-plugin-snapshots/commit/abdf8dc3ad7587be4495c7971657452adf6c6630))
+* **deps:** update dependency cypress to v9 ([704b0b7](https://github.com/kiru42/cypress-plugin-snapshots/commit/704b0b7010abf8aafa0d3dbed03be4b1f55aaaf0))
+
 ## [1.5.2](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.1...v1.5.2) (2022-02-26)
 
 
