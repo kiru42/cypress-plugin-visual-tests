@@ -1,5 +1,4 @@
 name: CI
-
 on:
   push:
     branches:
@@ -11,6 +10,7 @@ on:
 jobs:
   quality:
     name: Quality
+    if: "!contains(github.event.head_commit.message, 'chore(release):')"
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,17 +20,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
     - name: Cache Node.js modules
-      uses: actions/cache@v1
+      uses: actions/cache@v2
       with:
         path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
         key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.OS }}-node-
-          ${{ runner.OS }}-
     - name: npm install, build, and test
       run: |
         npm ci
@@ -76,4 +75,5 @@ jobs:
       - name: Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
