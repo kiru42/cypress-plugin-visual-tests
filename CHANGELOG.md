@@ -1,3 +1,13 @@
+## [1.5.2](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.1...v1.5.2) (2022-02-26)
+
+
+### Bug Fixes
+
+* package-lock.json ([4c0ee80](https://github.com/kiru42/cypress-plugin-snapshots/commit/4c0ee80681960a828428ab403f0a0a802c17d1cc))
+* readme ([91d6893](https://github.com/kiru42/cypress-plugin-snapshots/commit/91d68931ad6ccde3f77667a49377ed3c5f43f628))
+* readme ([8c14f73](https://github.com/kiru42/cypress-plugin-snapshots/commit/8c14f738061c08e73d92b08e0673f6077c2766bb))
+* readme ([4a462f1](https://github.com/kiru42/cypress-plugin-snapshots/commit/4a462f1ef8cd83043da949d448a461f3a014a5aa))
+
 ## [1.5.1](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.0...v1.5.1) (2022-02-26)
 
 
