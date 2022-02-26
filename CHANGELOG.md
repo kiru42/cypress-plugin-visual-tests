@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.6...v1.5.7) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([13f3a44](https://github.com/kiru42/cypress-plugin-snapshots/commit/13f3a44bf66fd3b993f1ea2363baeb0df6e8d2be))
+
 ## [1.5.6](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.5...v1.5.6) (2022-02-26)
 
 
