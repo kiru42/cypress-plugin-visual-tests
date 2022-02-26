@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.3...v1.5.4) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency start-server-and-test to v1.14.0 ([9fdc4b3](https://github.com/kiru42/cypress-plugin-snapshots/commit/9fdc4b3f06c64a7b5b329bd4f012afa24349da80))
+
 ## [1.5.3](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.2...v1.5.3) (2022-02-26)
 
 
