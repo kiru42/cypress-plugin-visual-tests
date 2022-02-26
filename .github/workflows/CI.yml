@@ -1,7 +1,4 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: CI tests
+name: CI
 
 on:
   push:
@@ -12,7 +9,8 @@ on:
       - main
 
 jobs:
-  ci-test:
+  quality:
+    name: Quality
     runs-on: ubuntu-latest
 
     strategy:
@@ -46,3 +44,36 @@ jobs:
       with:
         name: cypress-snapshots
         path: cypress/cypress/integration/__*snapshots__/*
+
+  release:
+    name: Release
+    needs: quality
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'chore(release):')
+    runs-on: ubuntu-latest
+    env:
+      CACHE_IMAGE: kiru42/cypress-plugin-snapshots
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Semantic Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
