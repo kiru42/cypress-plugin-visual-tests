@@ -42,40 +42,40 @@
     "test": "jest & npm --prefix cypress run cy:run"
   },
   "dependencies": {
-    "diff2html": "^2.7.0",
+    "diff2html": "2.12.2",
     "fs-extra": "10.0.1",
     "image-size": "1.0.1",
-    "jimp": "^0.16.1",
+    "jimp": "0.16.1",
     "js-base64": "3.7.2",
-    "lodash": "^4.17.13",
+    "lodash": "4.17.21",
     "pixelmatch": "5.2.1",
     "pngjs": "6.0.0",
-    "rand-token": "^1.0.1",
+    "rand-token": "1.0.1",
     "rimraf": "3.0.2",
-    "sanitize-filename": "^1.6.1",
+    "sanitize-filename": "1.6.3",
     "socket.io": "4.4.1",
     "socket.io-client": "4.4.1",
-    "source-map-support": "^0.5.10",
+    "source-map-support": "0.5.21",
     "unidiff": "1.0.2"
   },
   "peerDependencies": {
     "cypress": "^9.5.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/exec": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^8.0.2",
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.2",
     "eslint": "8.10.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.4.0",
-    "eslint-plugin-cypress": "^2.2.1",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-import": "2.25.4",
     "eslint-plugin-jest": "26.1.1",
     "jest": "27.5.1",
     "rewire": "6.0.0",
     "prettier": "2.5.1",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "19.0.2"
   },
   "prettier": {
     "printWidth": 100,
