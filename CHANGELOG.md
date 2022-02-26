@@ -1,3 +1,10 @@
+## [1.5.13](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.12...v1.5.13) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pixelmatch to v5 ([c3be4a4](https://github.com/kiru42/cypress-plugin-snapshots/commit/c3be4a4453808addc2c7f68fc9d3e87ecb77e40e))
+
 ## [1.5.12](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.11...v1.5.12) (2022-02-26)
 
 
