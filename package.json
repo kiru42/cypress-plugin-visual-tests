@@ -51,7 +51,7 @@
     "pixelmatch": "^4.0.2",
     "pngjs": "^3.3.3",
     "rand-token": "^1.0.1",
-    "rimraf": "^2.6.3",
+    "rimraf": "3.0.2",
     "sanitize-filename": "^1.6.1",
     "socket.io": "2.4.1",
     "socket.io-client": "2.4.0",
