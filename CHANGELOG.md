@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.4...v1.5.5) (2022-02-26)
+
+
+### Bug Fixes
+
+* prettier ([b8d8d30](https://github.com/kiru42/cypress-plugin-snapshots/commit/b8d8d307c049841f32da687b7e03004e8107c29f))
+
 ## [1.5.4](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.3...v1.5.4) (2022-02-26)
 
 
