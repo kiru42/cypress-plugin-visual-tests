@@ -48,7 +48,7 @@
     "jimp": "^0.16.1",
     "js-base64": "3.7.2",
     "lodash": "^4.17.13",
-    "pixelmatch": "^4.0.2",
+    "pixelmatch": "5.2.1",
     "pngjs": "6.0.0",
     "rand-token": "^1.0.1",
     "rimraf": "3.0.2",
