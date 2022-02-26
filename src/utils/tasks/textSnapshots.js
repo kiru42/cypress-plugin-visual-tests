@@ -3,11 +3,7 @@ const fs = require('fs-extra');
 const unidiff = require('unidiff');
 const prettier = require('prettier');
 const { TYPE_JSON } = require('../../dataTypes');
-const {
-  getConfig,
-  shouldNormalize,
-  getPrettierConfig
-} = require('../../config');
+const { getConfig, shouldNormalize, getPrettierConfig } = require('../../config');
 const removeExcludedFields = require('../text/removeExcludedFields');
 const { formatJson, normalizeObject } = require('../json');
 
@@ -30,10 +26,10 @@ function subjectToSnapshot(subject, dataType = TYPE_JSON, config = {}) {
       }
 
       result = prettier.format(result.trim(), prettierConfig).trim();
-    } catch(err) {
+    } catch (err) {
       throw new Error(`Cannot format subject: ${result}`);
     }
-  } else if(dataType === TYPE_JSON && config.formatJson) {
+  } else if (dataType === TYPE_JSON && config.formatJson) {
     result = formatJson(result);
   }
 
@@ -76,18 +72,23 @@ function readFile(filename) {
     try {
       delete require.cache[filename];
       content = require(filename); // eslint-disable-line import/no-dynamic-require
-    } catch(ex) {
+    } catch (ex) {
       // eslint-disable-next-line no-console
-      console.warn(`Cannot read snapshot file "${filename}" as javascript, falling back to JSON parser:`, ex);
+      console.warn(
+        `Cannot read snapshot file "${filename}" as javascript, falling back to JSON parser:`,
+        ex
+      );
       const fileContents = fs.readFileSync(filename, 'utf8');
 
-      if (!fileContents || !fileContents.trim() || fileContents.trim().slice(0,1) !== '{') {
-        throw new Error(`Cannot load snapshot file. File "${filename} does not contain valid JSON or javascript`);
+      if (!fileContents || !fileContents.trim() || fileContents.trim().slice(0, 1) !== '{') {
+        throw new Error(
+          `Cannot load snapshot file. File "${filename} does not contain valid JSON or javascript`
+        );
       }
 
       try {
         content = JSON.parse(fileContents);
-      } catch(jsonEx) {
+      } catch (jsonEx) {
         throw new Error(`Cannot read snapshot "${filename}" as JSON: ${jsonEx}`);
       }
     }
@@ -106,17 +107,19 @@ function updateSnapshot(filename, snapshotTitle, subject, dataType = TYPE_JSON) 
     store[snapshotTitle] = subject;
   }
 
-
   // Reformat to `exports` format which is nicer for Git diffs
   const saveResult = Object.keys(store).reduce((result, key) => {
     let value = store[key];
     if (typeof value === 'string') {
-      value = ` \`\n${value.trim().replace(/\\/g, '\\\\').replace(/`/g, '\\`')}\n\``;
+      value = ` \`\n${value
+        .trim()
+        .replace(/\\/g, '\\\\')
+        .replace(/`/g, '\\`')}\n\``;
     } else {
       value = `\n${formatJson(value)}`;
     }
     result += `exports[\`${key}\`] =${value}`;
-    result += ";\n\n";
+    result += ';\n\n';
 
     return result;
   }, '');

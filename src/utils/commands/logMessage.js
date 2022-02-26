@@ -29,9 +29,10 @@ function getLogMessage(result) {
   const args = Base64.encode(JSON.stringify(linkResult));
   const expectedMessage = result.expected ? 'Snapshots match' : 'Snapshot created, autopassed';
   const passedMessage = result.updated ? 'Snapshot updated' : expectedMessage;
-  const message = result.passed || result.updated ?
-    `[${passedMessage}](${URL_PREFIX}${args})` :
-    `[compare snapshot](${URL_PREFIX}${args})`;
+  const message =
+    result.passed || result.updated
+      ? `[${passedMessage}](${URL_PREFIX}${args})`
+      : `[compare snapshot](${URL_PREFIX}${args})`;
 
   return message;
 }

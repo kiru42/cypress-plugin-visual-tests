@@ -1,4 +1,3 @@
-
 const { initConfig, CONFIG_KEY } = require('./src/config');
 const initServer = require('./src/server/initServer');
 const tasks = require('./src/tasks/');
@@ -10,8 +9,7 @@ const tasks = require('./src/tasks/');
  * @param {Function} on - Method to register tasks
  * @param {Object} globalConfig - Object containing global Cypress config
  */
-function initPlugin(on, globalConfig = {
-}) {
+function initPlugin(on, globalConfig = {}) {
   const config = initConfig(globalConfig.env[CONFIG_KEY]);
   initServer(config);
 
@@ -35,5 +33,5 @@ function initPlugin(on, globalConfig = {
 }
 
 module.exports = {
-  initPlugin
+  initPlugin,
 };

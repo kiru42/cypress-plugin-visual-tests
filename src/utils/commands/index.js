@@ -20,10 +20,7 @@ function isElement(obj) {
 }
 
 function isCollection(obj) {
-  return obj && (
-    obj instanceof NodeList ||
-    obj instanceof HTMLCollection
-  );
+  return obj && (obj instanceof NodeList || obj instanceof HTMLCollection);
 }
 
 function getSubject(testSubject) {
@@ -58,22 +55,21 @@ function getSubject(testSubject) {
 }
 
 function isJQuery(subject) {
-  return subject && (
-    subject.constructor.name === 'jQuery' ||
-    subject.constructor.prototype.jquery
-  );
+  return subject && (subject.constructor.name === 'jQuery' || subject.constructor.prototype.jquery);
 }
 
 function isHtml(subject) {
-  return isJQuery(subject) ||
-          (Array.isArray(subject) && subject.length && isElement(subject[0])) ||
-          isCollection(subject) ||
-          isElement(subject);
+  return (
+    isJQuery(subject) ||
+    (Array.isArray(subject) && subject.length && isElement(subject[0])) ||
+    isCollection(subject) ||
+    isElement(subject)
+  );
 }
 
 module.exports = {
   getSubject,
   getTest,
   getTestForTask,
-  isHtml
-}
+  isHtml,
+};

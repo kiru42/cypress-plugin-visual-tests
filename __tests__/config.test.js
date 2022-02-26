@@ -26,7 +26,7 @@ describe('config', () => {
         y: 0,
         height: 100,
         width: 100,
-      }
+      },
     };
 
     expect(getScreenshotConfig(config)).toEqual({

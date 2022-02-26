@@ -3,7 +3,7 @@ const { initCommands } = require('../commands');
 global.Cypress = {
   env: () => ({}),
   config: () => {},
-  Commands: { add: jest.fn(), },
+  Commands: { add: jest.fn() },
   on: () => ({}),
 };
 

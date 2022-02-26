@@ -5,20 +5,17 @@ const { getConfig } = require('../config');
 const getSnapshotFilename = require('../utils/image/getSnapshotFilename');
 const getImageData = require('../utils/image/getImageData');
 const saveImageSnapshot = require('../save/saveImageSnapshot');
-const { getImageObject, compareImages, moveActualImageToSnapshotsDirectory, createDiffObject } = require('../utils/tasks/imageSnapshots');
+const {
+  getImageObject,
+  compareImages,
+  moveActualImageToSnapshotsDirectory,
+  createDiffObject,
+} = require('../utils/tasks/imageSnapshots');
 const resizeImage = require('../utils/image/resizeImage');
 const { IMAGE_TYPE_DIFF, IMAGE_TYPE_ACTUAL } = require('../constants');
 
 async function matchImageSnapshot(data = {}) {
-  const {
-    commandName,
-    dataType,
-    image,
-    options,
-    snapshotTitle,
-    subject,
-    testFile,
-  } = data;
+  const { commandName, dataType, image, options, snapshotTitle, subject, testFile } = data;
   if (!image) {
     throw new Error(`'image' not defined`);
   } else if (!image.devicePixelRatio) {
@@ -41,7 +38,7 @@ async function matchImageSnapshot(data = {}) {
 
   const expected = getImageObject(snapshotFile);
   const exists = expected !== false;
-  const autoPassed = (config.autopassNewSnapshots && expected === false);
+  const autoPassed = config.autopassNewSnapshots && expected === false;
   const actual = exists || resized ? getImageObject(image.path, true) : image;
   const passed = expected && compareImages(expected, actual, diffFilename, options);
 
@@ -58,8 +55,8 @@ async function matchImageSnapshot(data = {}) {
     rimraf(actual.path);
   }
 
-  const diff = passed || autoPassed || !options.createDiffImage ?
-    undefined : createDiffObject(diffFilename);
+  const diff =
+    passed || autoPassed || !options.createDiffImage ? undefined : createDiffObject(diffFilename);
 
   const result = {
     actual: getImageData(actual),

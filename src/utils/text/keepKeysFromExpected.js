@@ -23,11 +23,10 @@ function keepKeysFromExpected(subject, expected, keepConfig) {
   }
   if (expected && subject && typeof expected === 'object' && typeof subject === 'object') {
     const origin = cfg.ignoreExtraFields ? expected : subject;
-    return Object.keys(origin)
-      .reduce((result, key) => {
-        result[key] = keepKeysFromExpected(subject[key], expected[key], cfg);
-        return result;
-      }, {});
+    return Object.keys(origin).reduce((result, key) => {
+      result[key] = keepKeysFromExpected(subject[key], expected[key], cfg);
+      return result;
+    }, {});
   }
 
   return subject;

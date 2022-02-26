@@ -1,10 +1,9 @@
 /* eslint no-template-curly-in-string: 0 */
 const configModule = require('../src/config');
 
-jest.mock("../src/config.js");
+jest.mock('../src/config.js');
 
-jest.spyOn(configModule, 'initConfig')
-  .mockImplementation((config) => config);
+jest.spyOn(configModule, 'initConfig').mockImplementation(config => config);
 
 global.Cypress = {
   env: () => {},
@@ -20,12 +19,13 @@ describe('plugin', () => {
   it('initPlugin', () => {
     const globalConfig = {
       env: {
-        "cypress-plugin-snapshots": {
-          "serverEnabled": false,
-        }
-      }
+        'cypress-plugin-snapshots': {
+          serverEnabled: false,
+        },
+      },
     };
-    jest.spyOn(configModule, 'getConfig')
+    jest
+      .spyOn(configModule, 'getConfig')
       .mockImplementation(() => globalConfig.env['cypress-plugin-snapshots']);
     const on = jest.fn();
 

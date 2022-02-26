@@ -7,15 +7,15 @@ function getFile(filename) {
     throw new Error(`Path not allowed: ${filename}`);
   }
 
-  const fullPath = filename.match(/^\.\//) ?
-    path.join(path.resolve(__dirname, '../../', filename)) :
-    require.resolve(filename);
+  const fullPath = filename.match(/^\.\//)
+    ? path.join(path.resolve(__dirname, '../../', filename))
+    : require.resolve(filename);
 
   if (!fs.existsSync(fullPath)) {
     throw new Error(`File '${filename}' cannot be found. Location: '${fullPath}'`);
   }
 
-  return fs.readFileSync(fullPath, {encoding: 'utf8'});
+  return fs.readFileSync(fullPath, { encoding: 'utf8' });
 }
 
 module.exports = getFile;
