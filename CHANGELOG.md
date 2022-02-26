@@ -1,3 +1,10 @@
+## [1.5.10](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.9...v1.5.10) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pngjs to v6 ([32a2180](https://github.com/kiru42/cypress-plugin-snapshots/commit/32a2180503497f1fd82e6089633be49335940c2b))
+
 ## [1.5.9](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.8...v1.5.9) (2022-02-26)
 
 
