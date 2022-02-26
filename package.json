@@ -74,7 +74,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jest": "^22.3.0",
     "jest": "^24.1.0",
-    "rewire": "^4.0.1",
+    "rewire": "6.0.0",
     "semantic-release": "^19.0.2"
   },
   "prettier": {
