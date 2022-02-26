@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.8...v1.5.9) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rimraf to v3 ([4ac764c](https://github.com/kiru42/cypress-plugin-snapshots/commit/4ac764c7fe26cce5e52a2674f62195449d03bcd2))
+
 ## [1.5.8](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.7...v1.5.8) (2022-02-26)
 
 
