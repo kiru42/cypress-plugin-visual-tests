@@ -1,3 +1,27 @@
+# [1.5.0](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.4.4...v1.5.0) (2022-02-26)
+
+
+### Bug Fixes
+
+* **crypto:** replace with rand-token dependency ([a52d205](https://github.com/kiru42/cypress-plugin-snapshots/commit/a52d205ec6a057e63e219980803ab252074b101f))
+* troubleshooting ([20d4c0e](https://github.com/kiru42/cypress-plugin-snapshots/commit/20d4c0e8b541230ae91aace802a6f85a72185113))
+* troubleshooting ([ae9b97e](https://github.com/kiru42/cypress-plugin-snapshots/commit/ae9b97ec64bb6e20af9f8fac69fb5df022842fdf))
+* troubleshooting ([328cc1e](https://github.com/kiru42/cypress-plugin-snapshots/commit/328cc1e7f54829897167c6f3a39b11a4e02434c4))
+* troubleshooting ([4ce4690](https://github.com/kiru42/cypress-plugin-snapshots/commit/4ce4690b84aefb88a1baf51a3eeb59d5326b9fb7))
+* troubleshooting ([a50115f](https://github.com/kiru42/cypress-plugin-snapshots/commit/a50115f28ccd2c342d44c68a20f1078a3a552d3d))
+* troubleshooting ([6aaf4f9](https://github.com/kiru42/cypress-plugin-snapshots/commit/6aaf4f93b2f4e7577c8b10e4b516d4383fe91904))
+* troubleshooting ([8a7f155](https://github.com/kiru42/cypress-plugin-snapshots/commit/8a7f1555c724f0d1433f6e2c5b9ed26a8cba5089))
+* troubleshooting ([2adb138](https://github.com/kiru42/cypress-plugin-snapshots/commit/2adb138d5f9b55dee95ff208f17cef6c1a9cf1db))
+* troubleshooting ([a57e450](https://github.com/kiru42/cypress-plugin-snapshots/commit/a57e45028d0dbfd6f6de9c589e9f1c317b353c84))
+* troubleshooting ([84ad93f](https://github.com/kiru42/cypress-plugin-snapshots/commit/84ad93f01d2f58817c4cc216d60365fef63a9b1c))
+
+
+### Features
+
+* do a first release ([48ff8a7](https://github.com/kiru42/cypress-plugin-snapshots/commit/48ff8a7c775d3e6971ee60b074212e09d974f238))
+* first release of cypress-plugin-visual-tests ([fcb9e31](https://github.com/kiru42/cypress-plugin-snapshots/commit/fcb9e315b1a208635bc8c7214262ed3e56919850))
+* force a first release ([3ca2586](https://github.com/kiru42/cypress-plugin-snapshots/commit/3ca25869f1921d0a0601f947d478ca85859a56c9))
+
 # Changelog
 All notable changes to this project will be documented in this file.
 
