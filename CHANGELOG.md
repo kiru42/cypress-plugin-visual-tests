@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.5...v1.5.6) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency express to v4.17.3 ([1b51bdd](https://github.com/kiru42/cypress-plugin-snapshots/commit/1b51bddaa6c75f3da31cbbabbcfad973b0e06bb0))
+
 ## [1.5.5](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.4...v1.5.5) (2022-02-26)
 
 

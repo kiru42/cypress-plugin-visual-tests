@@ -1,6 +1,6 @@
 {
   "name": "@kiru42/cypress-plugin-visual-tests",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "private": false,
   "description": "Cypress snapshot functionality for data",
   "homepage": "https://github.com/kiru42/cypress-plugin-snapshots",
