@@ -9,10 +9,10 @@ function createToken() {
 const DEFAULT_SCREENSHOT_CONFIG = Object.freeze({
   blackout: [],
   capture: 'fullPage',
-  clip: null,
+  clip: { x: 0, y: 0, width: 100, height: 100 },
   padding: null,
   disableTimersAndAnimations: true,
-  log: false,
+  log: true,
   scale: false,
   timeout: 30000,
 });
@@ -39,7 +39,7 @@ const DEFAULT_CONFIG = Object.freeze({
     html: {
       parser: 'html',
       tabWidth: 2,
-      endOfLine: 'lf'
+      endOfLine: 'lf',
     },
   },
   screenshotConfig: clone(DEFAULT_SCREENSHOT_CONFIG),
@@ -69,29 +69,22 @@ function getConfig() {
 
 function getImageConfig(options = {}) {
   return Object.keys(DEFAULT_IMAGE_CONFIG)
-    .filter((key) => options.imageConfig && options.imageConfig[key] !== undefined)
-    .reduce(
-      (imageConfig, key) => {
-        imageConfig[key] = options.imageConfig[key];
-        return imageConfig;
-      },
-      merge({}, DEFAULT_IMAGE_CONFIG, getConfig().imageConfig)
-    );
+    .filter(key => options.imageConfig && options.imageConfig[key] !== undefined)
+    .reduce((imageConfig, key) => {
+      imageConfig[key] = options.imageConfig[key];
+      return imageConfig;
+    }, merge({}, DEFAULT_IMAGE_CONFIG, getConfig().imageConfig));
 }
-
 
 function getScreenshotConfig(options = {}) {
   const screenshotConfig = Object.keys(DEFAULT_SCREENSHOT_CONFIG)
-    .filter((key) => options.screenshotConfig && options.screenshotConfig[key] !== undefined)
-    .reduce(
-      (currentConfig, key) => {
-        currentConfig[key] = options.screenshotConfig[key];
-        return currentConfig;
-      },
-      merge({}, DEFAULT_SCREENSHOT_CONFIG, getConfig().screenshotConfig)
-    );
+    .filter(key => options.screenshotConfig && options.screenshotConfig[key] !== undefined)
+    .reduce((currentConfig, key) => {
+      currentConfig[key] = options.screenshotConfig[key];
+      return currentConfig;
+    }, merge({}, DEFAULT_SCREENSHOT_CONFIG, getConfig().screenshotConfig));
 
-  screenshotConfig.blackout = (screenshotConfig.blackout || []);
+  screenshotConfig.blackout = screenshotConfig.blackout || [];
   screenshotConfig.blackout.push('.snapshot-diff');
   return screenshotConfig;
 }
@@ -112,14 +105,13 @@ function getServerUrl(suppliedConfig) {
 }
 
 function shouldNormalize(dataType, suppliedConfig) {
-  const cfg = suppliedConfig && suppliedConfig.normalizeJson !== undefined ?
-    suppliedConfig : getConfig();
+  const cfg =
+    suppliedConfig && suppliedConfig.normalizeJson !== undefined ? suppliedConfig : getConfig();
   return dataType === TYPE_JSON && cfg.normalizeJson;
 }
 
 function getPrettierConfig(dataType, suppliedConfig) {
-  const cfg = suppliedConfig && suppliedConfig.prettierConfig ?
-    suppliedConfig : getConfig();
+  const cfg = suppliedConfig && suppliedConfig.prettierConfig ? suppliedConfig : getConfig();
   return cfg.prettier && cfg.prettierConfig ? cfg.prettierConfig[dataType] : undefined;
 }
 
