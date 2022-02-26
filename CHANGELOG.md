@@ -1,3 +1,10 @@
+## [1.5.11](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.10...v1.5.11) (2022-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency js-base64 to v3 ([e764552](https://github.com/kiru42/cypress-plugin-snapshots/commit/e764552562ebf37ec1e76a21a2fe24e4f04d70e6))
+
 ## [1.5.10](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.9...v1.5.10) (2022-02-26)
 
 
