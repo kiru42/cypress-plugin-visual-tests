@@ -16,6 +16,7 @@
     "browserslist": "^4.19.3",
     "cypress": "9.5.0",
     "cypress-plugin-snapshots": "file:../",
+    "diff2html": "^3.4.16",
     "express": "4.17.3",
     "start-server-and-test": "1.14.0"
   }
