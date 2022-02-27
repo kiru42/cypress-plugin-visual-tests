@@ -1,3 +1,19 @@
+## [1.5.17](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.16...v1.5.17) (2022-02-27)
+
+
+### Bug Fixes
+
+* .gitignore ([4ad4b7c](https://github.com/kiru42/cypress-plugin-snapshots/commit/4ad4b7cb41096ac7601573b83b46d9bd94a3ce3c))
+* .gitignore ([9c97d92](https://github.com/kiru42/cypress-plugin-snapshots/commit/9c97d921a29f7b22ae8d35e4bcd716e732b42752))
+* add assets ([f50af42](https://github.com/kiru42/cypress-plugin-snapshots/commit/f50af4264b542332a887435a61167c43d98dc80c))
+* add assets ([2ff73aa](https://github.com/kiru42/cypress-plugin-snapshots/commit/2ff73aac3012d9f57f2830224fcf631b1b4ad0ed))
+* **deps:** update dependency diff2html to v3 ([cbc7c82](https://github.com/kiru42/cypress-plugin-snapshots/commit/cbc7c825e868f76680b8d52b905d3b83bdd4aab6))
+* diff2html assets path ([c02af20](https://github.com/kiru42/cypress-plugin-snapshots/commit/c02af20aafebb8aba3030c54033c37d4aafcc6c3))
+* diff2html assets path ([cda1113](https://github.com/kiru42/cypress-plugin-snapshots/commit/cda111344fc4657ae2fbfdb628004f1ab3dc88cb))
+* diff2html assets path ([7cf3dae](https://github.com/kiru42/cypress-plugin-snapshots/commit/7cf3dae465d15fcbf7a41c1ebfc645644ffed02b))
+* diff2html assets path ([14150d9](https://github.com/kiru42/cypress-plugin-snapshots/commit/14150d9a7cdc406cf156f762965ec59eae9d8920))
+* remove useless packages ([2fc82f6](https://github.com/kiru42/cypress-plugin-snapshots/commit/2fc82f6a98722d208db116731a18e2fe7cad7fa9))
+
 ## [1.5.16](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.15...v1.5.16) (2022-02-27)
 
 
