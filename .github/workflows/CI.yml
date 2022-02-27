@@ -21,8 +21,10 @@ jobs:
         include:
           - node: 14
             os: ubuntu-latest
+            experimental: true
           - node: 14
             os: ubuntu-18.04
+            experimental: true
 
     steps:
     - uses: actions/checkout@v2
