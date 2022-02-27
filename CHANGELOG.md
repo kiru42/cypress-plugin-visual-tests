@@ -1,3 +1,17 @@
+## [1.5.15](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.14...v1.5.15) (2022-02-27)
+
+
+### Bug Fixes
+
+* add missing type ([716a839](https://github.com/kiru42/cypress-plugin-snapshots/commit/716a839d31e5ec97382ab623662da651bd71cb50))
+* **deps:** update dependency diff2html to v3 ([39e7306](https://github.com/kiru42/cypress-plugin-snapshots/commit/39e7306a7439e7ac055c6fb3a0eaf91fe2b6685c))
+* diff2html's assets ([ddd0327](https://github.com/kiru42/cypress-plugin-snapshots/commit/ddd0327d8204d280b0f20f6626088f12cb3dcfac))
+* ignore  eslint error on  default-param-last ([5149508](https://github.com/kiru42/cypress-plugin-snapshots/commit/5149508f44523efc4183eca11af4162217b6dbc8))
+* remove globals ([48fe3bf](https://github.com/kiru42/cypress-plugin-snapshots/commit/48fe3bf5f458715913a5cb891da4cc050442d76b))
+* snapshots ([12f2a8a](https://github.com/kiru42/cypress-plugin-snapshots/commit/12f2a8a274b12b31d8c7864ba8187a72f0fad972))
+* snapshots ([0071e95](https://github.com/kiru42/cypress-plugin-snapshots/commit/0071e95fede53cebfac9bd9dbd7db1dfd1d677ab))
+* snapshots ([d08ef6a](https://github.com/kiru42/cypress-plugin-snapshots/commit/d08ef6a29d6d27699a9c0c73dfd0c68c663c7bb8))
+
 ## [1.5.14](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.13...v1.5.14) (2022-02-26)
 
 
