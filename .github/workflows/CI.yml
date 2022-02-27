@@ -15,8 +15,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 15.x, 16.x, 17.x]
-        experimental: [true]
+        node-version: [15.x, 16.x, 17.x]
+        experimental: [false]
         os: [macos-latest, windows-latest, ubuntu-18.04, ubuntu-latest]
 
     steps:
