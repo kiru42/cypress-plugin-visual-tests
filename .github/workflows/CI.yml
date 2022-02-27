@@ -19,9 +19,9 @@ jobs:
         os: [ubuntu-18.04, ubuntu-latest]
         experimental: [false]
         include:
-          - node: 14.x
+          - node: 14
             os: ubuntu-latest
-          - node: 14.x
+          - node: 14
             os: ubuntu-18.04
 
     steps:
