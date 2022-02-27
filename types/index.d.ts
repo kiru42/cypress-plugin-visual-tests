@@ -8,6 +8,22 @@
 // }
 
 declare namespace Cypress {
+
+  type ScreenshotDefaultsOptions = {
+    blackout: any[];
+    capture: string;
+    clip: {
+        x: number;
+        y: number;
+        width: number;
+        height: number;
+    };
+    padding: any;
+    disableTimersAndAnimations: boolean;
+    log: boolean;
+    scale: boolean;
+    timeout: number;
+  }
   interface Chainable<Subject = any> {
     toMatchSnapshot(options?: Partial<{
       ignoreExtralFields: boolean,
