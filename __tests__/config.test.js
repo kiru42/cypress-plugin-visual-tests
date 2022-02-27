@@ -20,12 +20,14 @@ describe('config', () => {
 
   it('getScreenshotConfig', () => {
     const config = {
-      log: true,
-      clip: {
-        x: 0,
-        y: 0,
-        height: 100,
-        width: 100,
+      screenshotConfig: {
+        log: true,
+        clip: {
+          x: 0,
+          y: 0,
+          height: 100,
+          width: 100,
+        },
       },
     };
 

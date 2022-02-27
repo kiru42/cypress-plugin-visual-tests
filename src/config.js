@@ -9,7 +9,7 @@ function createToken() {
 const DEFAULT_SCREENSHOT_CONFIG = Object.freeze({
   blackout: [],
   capture: 'fullPage',
-  clip: { x: 0, y: 0, width: 100, height: 100 },
+  clip: null,
   padding: null,
   disableTimersAndAnimations: true,
   log: true,
