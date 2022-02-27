@@ -1,3 +1,10 @@
+## [1.5.16](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.15...v1.5.16) (2022-02-27)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency browserslist to 4.19.3 ([f592edf](https://github.com/kiru42/cypress-plugin-snapshots/commit/f592edf7bbb5c225157ca694c3fc1e496e31255c))
+
 ## [1.5.15](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.14...v1.5.15) (2022-02-27)
 
 
