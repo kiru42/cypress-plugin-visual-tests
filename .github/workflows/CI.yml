@@ -33,6 +33,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm ci
+        npx browserslist@latest --update-db
         npm --prefix cypress ci
         npm run lint &
         npm run ci:test
