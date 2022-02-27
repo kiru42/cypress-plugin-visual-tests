@@ -1,6 +1,7 @@
+/* eslint-disable default-param-last */
 const { initConfig, CONFIG_KEY } = require('./src/config');
 const initServer = require('./src/server/initServer');
-const tasks = require('./src/tasks/');
+const tasks = require('./src/tasks');
 
 /**
  * Initializes the plugin:
