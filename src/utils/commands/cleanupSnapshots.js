@@ -1,4 +1,3 @@
-/* globals Cypress, before, after, cy */
 /* eslint-env browser */
 const { formatNormalizedJson } = require('../../utils/json');
 const getTextSnapshotFilename = require('../text/getSnapshotFilename');

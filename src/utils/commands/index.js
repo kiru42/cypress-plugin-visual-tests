@@ -1,4 +1,3 @@
-/* globals Cypress, before, after, cy */
 /* eslint-env browser */
 function getTest() {
   return Cypress.mocha.getRunner().test;

@@ -1,4 +1,3 @@
-/* globals Cypress, before, after, cy */
 /* eslint-env browser */
 const { merge, cloneDeep } = require('lodash');
 const { initUi } = require('./src/ui');
