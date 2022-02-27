@@ -15,16 +15,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [15.x, 16.x, 17.x]
+        node-version: [14.x, 15.x, 16.x, 17.x]
         os: [ubuntu-18.04, ubuntu-latest]
-        experimental: [false]
-        include:
-          - node-version: 14
-            os: ubuntu-latest
-            experimental: true
-          - node-version: 14
-            os: ubuntu-18.04
-            experimental: true
 
     steps:
     - uses: actions/checkout@v2
