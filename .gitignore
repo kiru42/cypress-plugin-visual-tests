@@ -1,3 +1,6 @@
 .DS_Store
 node_modules
 /cypress/cypress/screenshots
+/cypress/cypress/videos/*.mp4
+/cypress/cypress/integration/__image_snapshots__/*.actual.png
+/cypress/cypress/integration/__image_snapshots__/*.diff.png
