@@ -20,29 +20,25 @@ describe('config', () => {
 
   it('getScreenshotConfig', () => {
     const config = {
-      log: true,
-      clip: {
-        x: 0,
-        y: 0,
-        height: 100,
-        width: 100,
+      screenshotConfig: {
+        log: true,
+        clip: {
+          x: 0,
+          y: 0,
+          height: 100,
+          width: 100,
+        },
       },
     };
 
     expect(getScreenshotConfig(config)).toEqual({
       blackout: ['.snapshot-diff'],
       capture: 'fullPage',
-      clip: {
-        x: 0,
-        y: 0,
-        height: 100,
-        width: 100,
-      },
       disableTimersAndAnimations: true,
-      log: true,
       padding: null,
       scale: false,
       timeout: 30000,
+      ...config.screenshotConfig,
     });
   });
 

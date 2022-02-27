@@ -13,6 +13,7 @@
   "author": "Meinaart van Straalen",
   "license": "MIT",
   "dependencies": {
+    "browserslist": "^4.19.3",
     "cypress": "9.5.0",
     "cypress-plugin-snapshots": "file:../",
     "express": "4.17.3",

@@ -1,4 +1,3 @@
-/* globals Cypress, before, after, cy */
 /* eslint-env browser */
 const { MATCH_TEXT } = require('../tasks/taskNames');
 const getTaskData = require('../utils/commands/getTaskData');

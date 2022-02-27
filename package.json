@@ -19,7 +19,7 @@
     "types"
   ],
   "engines": {
-    "node": ">=8.2.1"
+    "node": ">=12.22.0"
   },
   "bugs": {
     "url": "https://github.com/kiru42/cypress-plugin-snapshots/issues"
