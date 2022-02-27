@@ -34,8 +34,6 @@ jobs:
       run: |
         npm ci
         npm --prefix cypress ci
-        npx browserslist@latest --update-db
-        cd cypress/ && npx browserslist@latest --update-db
         npm run lint &
         npm run ci:test
         kill $(jobs -p) || true
