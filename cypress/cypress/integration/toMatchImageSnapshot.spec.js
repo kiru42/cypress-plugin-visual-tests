@@ -53,7 +53,7 @@ describe('toMatchImageSnapshot', () => {
       });
 
       cy.get('[data-test=test2]').toMatchImageSnapshot({
-        threshold: 0.1,
+        threshold: 0.3,
       });
     });
   });
