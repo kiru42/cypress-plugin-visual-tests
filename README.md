@@ -1,6 +1,7 @@
 # cypress-plugin-visual-tests
 > Plugin for snapshot tests in [Cypress.io](https://www.cypress.io/).
-> cypress-plugin-visual-tests is a fork of cypress-plugin-snapshots
+
+> cypress-plugin-visual-tests is a fork of cypress-plugin-snapshots.
 
 [![NPM][npm-icon]][npm-url]
 
