@@ -13,7 +13,7 @@
   "author": "Kiruban PREMKUMAR",
   "license": "MIT",
   "dependencies": {
-    "cypress": "9.5.0",
+    "cypress": "9.5.1",
     "cypress-plugin-visual-tests": "file:../",
     "diff2html": "^3.4.16",
     "express": "4.17.3",
