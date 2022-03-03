@@ -1,3 +1,10 @@
+## [1.5.19](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.18...v1.5.19) (2022-03-03)
+
+
+### Bug Fixes
+
+* update packages ([3c1aded](https://github.com/kiru42/cypress-plugin-visual-tests/commit/3c1adedb6e695a940d292e284268c6ba4f414489))
+
 ## [1.5.18](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.17...v1.5.18) (2022-03-03)
 
 
