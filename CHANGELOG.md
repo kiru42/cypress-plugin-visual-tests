@@ -1,3 +1,11 @@
+## [1.5.18](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.17...v1.5.18) (2022-03-03)
+
+
+### Bug Fixes
+
+* peerDependencies ([d90cb9e](https://github.com/kiru42/cypress-plugin-visual-tests/commit/d90cb9e53088b53eaad29f4fdcdf5df8d537ee81))
+* project name ([369af7f](https://github.com/kiru42/cypress-plugin-visual-tests/commit/369af7fbe03c8c0361a3dedbbb40596aca475bfb))
+
 ## [1.5.17](https://github.com/kiru42/cypress-plugin-snapshots/compare/v1.5.16...v1.5.17) (2022-02-27)
 
 
