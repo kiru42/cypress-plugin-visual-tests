@@ -3,7 +3,7 @@
 // -- cypress/tsconfig.json
 // {
 //   "compilerOptions": {
-//      "types": ["cypress", "cypress-plugin-snapshots"]
+//      "types": ["cypress", "cypress-plugin-visual-tests"]
 //    }
 // }
 

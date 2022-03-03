@@ -3,10 +3,10 @@
   "version": "1.5.17",
   "private": false,
   "description": "Cypress snapshot functionality for data",
-  "homepage": "https://github.com/kiru42/cypress-plugin-snapshots",
+  "homepage": "https://github.com/kiru42/cypress-plugin-visual-tests",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiru42/cypress-plugin-snapshots.git"
+    "url": "https://github.com/kiru42/cypress-plugin-visual-tests.git"
   },
   "types": "types/index.d.ts",
   "files": [
@@ -22,7 +22,7 @@
     "node": ">=12.22.0"
   },
   "bugs": {
-    "url": "https://github.com/kiru42/cypress-plugin-snapshots/issues"
+    "url": "https://github.com/kiru42/cypress-plugin-visual-tests/issues"
   },
   "keywords": [
     "cypress",
@@ -59,7 +59,7 @@
     "unidiff": "1.0.2"
   },
   "peerDependencies": {
-    "cypress": "^9.5.0"
+    "cypress": "9.x"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
@@ -73,8 +73,8 @@
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-jest": "26.1.1",
     "jest": "27.5.1",
-    "rewire": "6.0.0",
     "prettier": "2.5.1",
+    "rewire": "6.0.0",
     "semantic-release": "19.0.2"
   },
   "prettier": {

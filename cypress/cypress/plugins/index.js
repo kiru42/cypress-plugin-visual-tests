@@ -1,4 +1,4 @@
-const { initPlugin } = require('cypress-plugin-snapshots/plugin');
+const { initPlugin } = require('cypress-plugin-visual-tests/plugin');
 
 module.exports = (on, config) => {
   initPlugin(on, config);
