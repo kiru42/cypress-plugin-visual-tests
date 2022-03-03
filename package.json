@@ -3,10 +3,10 @@
   "version": "1.5.17",
   "private": false,
   "description": "Cypress snapshot functionality for data",
-  "homepage": "https://github.com/kiru42/cypress-plugin-snapshots",
+  "homepage": "https://github.com/kiru42/cypress-plugin-visual-tests",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiru42/cypress-plugin-snapshots.git"
+    "url": "https://github.com/kiru42/cypress-plugin-visual-tests.git"
   },
   "types": "types/index.d.ts",
   "files": [
@@ -22,7 +22,7 @@
     "node": ">=12.22.0"
   },
   "bugs": {
-    "url": "https://github.com/kiru42/cypress-plugin-snapshots/issues"
+    "url": "https://github.com/kiru42/cypress-plugin-visual-tests/issues"
   },
   "keywords": [
     "cypress",

@@ -1,5 +1,6 @@
 # cypress-plugin-visual-tests
 > Plugin for snapshot tests in [Cypress.io](https://www.cypress.io/).
+> cypress-plugin-visual-tests is a fork of cypress-plugin-snapshots
 
 [![NPM][npm-icon]][npm-url]
 
@@ -107,7 +108,7 @@ Add this to your `cypress.json` configuration file:
 Find your `cypress/plugins/index.js` file and change it to look like this:
 
 ```javascript
-const { initPlugin } = require('cypress-plugin-snapshots/plugin');
+const { initPlugin } = require('cypress-plugin-visual-tests/plugin');
 
 module.exports = (on, config) => {
   initPlugin(on, config);
@@ -119,7 +120,7 @@ module.exports = (on, config) => {
 Find your `cypress/support/index.js` file and add the following line:
 
 ```javascript
-import 'cypress-plugin-snapshots/commands';
+import 'cypress-plugin-visual-tests/commands';
 ```
 
 ### Make changes to default configuration
@@ -163,7 +164,7 @@ Add the configuration below to your `cypress.json` file to make changes to the d
 ```
 
 ## Caveats :warning:
-There is currently an issue when running "All Tests" in Cypress with this plugin. You can follow the progress on the issue [here](https://github.com/meinaart/cypress-plugin-snapshots/issues/10) and [here](https://github.com/cypress-io/cypress/issues/3090). When running "All Tests" any tests that utilize `cypress-plugin-snapshots` will throw an error.
+There is currently an issue when running "All Tests" in Cypress with this plugin. You can follow the progress on the issue [here](https://github.com/meinaart/cypress-plugin-snapshots/issues/10) and [here](https://github.com/cypress-io/cypress/issues/3090). When running "All Tests" any tests that utilize `cypress-plugin-visual-tests` will throw an error.
 
 ## Roadmap
 Below is a list of functionality that is under consideration for implementing in a next version.
@@ -182,5 +183,5 @@ This plugin is released under the MIT license.
 
 [npm-icon]: https://nodei.co/npm/@kiru42/cypress-plugin-visual-tests.svg?downloads=true
 [npm-url]: https://www.npmjs.com/package/@kiru42/cypress-plugin-visual-tests
-[ci-image]: https://github.com/kiru42/cypress-plugin-snapshots/workflows/CI/badge.svg?branch=main
-[ci-url]: https://github.com/kiru42/cypress-plugin-snapshots/actions
+[ci-image]: https://github.com/kiru42/cypress-plugin-visual-tests/workflows/CI/badge.svg?branch=main
+[ci-url]: https://github.com/kiru42/cypress-plugin-visual-tests/actions
