@@ -1,3 +1,10 @@
+## [1.5.20](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.19...v1.5.20) (2022-03-04)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([b785d53](https://github.com/kiru42/cypress-plugin-visual-tests/commit/b785d53f66d7300f167070e844258ad4fd27feed))
+
 ## [1.5.19](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.18...v1.5.19) (2022-03-03)
 
 
