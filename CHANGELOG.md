@@ -1,3 +1,10 @@
+## [1.5.23](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.22...v1.5.23) (2022-04-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cypress to v9.5.3 ([6ecb188](https://github.com/kiru42/cypress-plugin-visual-tests/commit/6ecb1888c9fcdb4acd33c7934e9b772cc271bd5c))
+
 ## [1.5.22](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.21...v1.5.22) (2022-03-15)
 
 
