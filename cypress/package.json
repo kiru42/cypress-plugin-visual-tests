@@ -17,7 +17,7 @@
     "cypress-plugin-visual-tests": "file:../",
     "diff2html": "3.4.16",
     "express": "4.17.3",
-    "minimist": "1.2.5",
+    "minimist": "1.2.6",
     "start-server-and-test": "1.14.0",
     "ws": "8.5.0"
   }
