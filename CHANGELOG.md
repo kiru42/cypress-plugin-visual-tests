@@ -1,3 +1,11 @@
+## [1.5.25](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.24...v1.5.25) (2022-04-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cypress to v9.5.4 ([c717aab](https://github.com/kiru42/cypress-plugin-visual-tests/commit/c717aab226e219ecbdf05c501c28bade123cb52d))
+* **deps:** update dependency fs-extra to v10.1.0 ([eee3e3b](https://github.com/kiru42/cypress-plugin-visual-tests/commit/eee3e3b6c43327af47d62d7169157805975020b9))
+
 ## [1.5.24](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.23...v1.5.24) (2022-04-09)
 
 
