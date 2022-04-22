@@ -1,3 +1,10 @@
+## [1.5.26](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.25...v1.5.26) (2022-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency diff2html to v3.4.17 ([b44272c](https://github.com/kiru42/cypress-plugin-visual-tests/commit/b44272cd0b8b46c18b864b63e1ef6c8f703ef729))
+
 ## [1.5.25](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.24...v1.5.25) (2022-04-18)
 
 
