@@ -1,3 +1,10 @@
+## [1.5.27](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.26...v1.5.27) (2022-04-25)
+
+
+### Bug Fixes
+
+* **deps:** update socket.io packages to v4.5.0 ([1780112](https://github.com/kiru42/cypress-plugin-visual-tests/commit/17801123aa814bf92cec33318d51d4b4f1faa0ac))
+
 ## [1.5.26](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.25...v1.5.26) (2022-04-22)
 
 
