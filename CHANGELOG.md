@@ -1,3 +1,12 @@
+## [1.5.28](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.27...v1.5.28) (2022-05-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cypress to v9.6.0 ([0c250a7](https://github.com/kiru42/cypress-plugin-visual-tests/commit/0c250a7a09c27e2f85c80d2c64a5dbf5821a6d37))
+* **deps:** update dependency pixelmatch to v5.3.0 ([01212b3](https://github.com/kiru42/cypress-plugin-visual-tests/commit/01212b33905e1ac45d1bf3a8c404af3c4c90203f))
+* **deps:** update dependency ws to v8.6.0 ([74ef86b](https://github.com/kiru42/cypress-plugin-visual-tests/commit/74ef86b11f025b0670db9934c98cc5bbb6ed6614))
+
 ## [1.5.27](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.26...v1.5.27) (2022-04-25)
 
 
