@@ -1,3 +1,12 @@
+## [1.5.29](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.28...v1.5.29) (2022-06-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cypress to v9.7.0 ([f55a402](https://github.com/kiru42/cypress-plugin-visual-tests/commit/f55a4021247526d79b0ecb77deca6abd6c943ecc))
+* **deps:** update dependency ws to v8.7.0 ([639e9a3](https://github.com/kiru42/cypress-plugin-visual-tests/commit/639e9a3585d6dd011807dcef629b11c93dbc7a4b))
+* **deps:** update socket.io packages to v4.5.1 ([d80879f](https://github.com/kiru42/cypress-plugin-visual-tests/commit/d80879f7c7dafdb9f05135140338eaff98a13a3c))
+
 ## [1.5.28](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.27...v1.5.28) (2022-05-01)
 
 
