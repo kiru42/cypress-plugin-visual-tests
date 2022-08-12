@@ -19,6 +19,6 @@
     "express": "4.17.3",
     "minimist": "1.2.6",
     "start-server-and-test": "1.14.0",
-    "ws": "8.7.0"
+    "ws": "8.8.1"
   }
 }
