@@ -59,7 +59,7 @@
     "unidiff": "1.0.2"
   },
   "peerDependencies": {
-    "cypress": "9.x"
+    "cypress": "9.x || 10.x"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
