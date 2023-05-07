@@ -1,3 +1,11 @@
+## [1.5.36](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.35...v1.5.36) (2023-05-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency diff2html to v3.4.35 ([884d84d](https://github.com/kiru42/cypress-plugin-visual-tests/commit/884d84dcbf03c330c455f1926b41e9e7a9fb15f3))
+* **deps:** update socket.io packages to v4.6.1 ([2ac48d4](https://github.com/kiru42/cypress-plugin-visual-tests/commit/2ac48d46068f4759a926e454768870b9587141dc))
+
 ## [1.5.35](https://github.com/kiru42/cypress-plugin-visual-tests/compare/v1.5.34...v1.5.35) (2023-05-07)
 
 
