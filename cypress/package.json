@@ -15,7 +15,7 @@
   "dependencies": {
     "cypress": "9.7.0",
     "cypress-plugin-visual-tests": "file:../",
-    "diff2html": "3.4.35",
+    "diff2html": "3.4.48",
     "express": "4.18.2",
     "minimist": "1.2.8",
     "start-server-and-test": "1.14.0",
