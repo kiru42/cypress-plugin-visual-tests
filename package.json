@@ -56,7 +56,7 @@
     "socket.io": "4.6.1",
     "socket.io-client": "4.6.1",
     "source-map-support": "0.5.21",
-    "unidiff": "1.0.2"
+    "unidiff": "1.0.4"
   },
   "peerDependencies": {
     "cypress": "9.x"
