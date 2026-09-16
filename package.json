@@ -44,7 +44,7 @@
   "dependencies": {
     "diff2html": "3.4.35",
     "fs-extra": "10.1.0",
-    "image-size": "1.0.2",
+    "image-size": "npm:image-size-next@1.2.2",
     "jimp": "0.22.10",
     "js-base64": "3.7.2",
     "lodash": "4.17.21",
